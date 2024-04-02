@@ -1,10 +1,9 @@
-# Usercontrol Builder for TwinBASIC
+# Usercontrol Builder addin for TwinBASIC
 
 Back in 90's when I was doing my first steps with vb6, ActiveX Control Interface Wizard was my favorite addin .
 Thanks to the new Add-in subsystem of TwinBasic, I started creating my "Usercontrol Builder" addin.
 
-*** Usercontrol Builder addin for TwinBasic ***
------------------------------------------------
+
 
 Features:
 ---------
@@ -29,14 +28,13 @@ New features compared to VB6:
 - Continuous mapping. Holding down the Ctrl key, you can map members to the last successful mapped control.
 - Settings page
 - UserControl Builder, includes tB's new data types (LongLong, LongPtr, Decimal)
-
 - You can press the [Finish] button at any page of the wizard. (included in Settings)
 
+Notes
+-----
 - Supported controls for mapping (until now):
 Usercontrol, Checkbox, ComboBox, CommandButton, DirList, DriveList, FileList, Frame, HScrollBar, Image, Label, Line, ListBox, OptionButton, PictureBox, Shape, TextBox, VScrollBar
-
 - Important note: The Builder does not read (for now) any pre-existing code. It works one way (only generating code, not replacing)
-
 - There are some known issues (like tabIndex) that will be solved in the future.
 
 **Status (Nov 11th):** 

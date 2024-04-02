@@ -4,8 +4,10 @@ Back in 90's when I was doing my first steps with vb6, ActiveX Control Interface
 Thanks to the new Add-in subsystem of TwinBasic, I started creating my "Usercontrol Builder" addin.
 
 *** Usercontrol Builder addin for TwinBasic ***
-*** --------------------------------------- ***
+-----------------------------------------------
+
 Features:
+---------
 
 - Wizard includes 6 pages (steps)
   - Page_1: Select one of the available usercontrols in your project. You can use the filters above the list for finding the desired members (if no usercontrols exist, the wizard will not open)
@@ -14,13 +16,16 @@ Features:
   - Page_4: Map any of the selected members (built-in or custom) with members of included controls in the Usercontrol.
   - Page_5: Fill in any extra info for the unmapped members.
   - Page_6: Pressing [Finish], the generated code will be inserted in the UC's codeEditor, at the top lines. You can see a summary or the generated code (and copy it to the clipboard), before pressing the [Finish].
- 
-- About mapping:
-	- if you map a built-in member with the same member of a control, your UC will use the implementation of the included control.
-	- if you map a custom member, with an existing member of a control, your UC will use the implementation of the included control but will be exposed with a different name (the name of the custom member)
-	- if you map a built-in member with a different member on a control, the implementation of the control's member will be used. In this case the wizard will also generate a warning, to avoid wrong mapping.
 
-*** New features compared to VB6: 
+ > [!IMPORTANT]  
+> **About mapping:**
+> - if you map a built-in member with the same member of a control, your UC will use the implementation of the included control.
+> - if you map a custom member, with an existing member of a control, your UC will use the implementation of the included control but will be exposed with a different name (the name of the custom member)
+> - if you map a built-in member with a different member on a control, the implementation of the control's member will be used. In this case the wizard will also generate a warning, to avoid wrong mapping.
+
+
+New features compared to VB6: 
+------------------------------
 - Continuous mapping. Holding down the Ctrl key, you can map members to the last successful mapped control.
 - Settings page
 - UserControl Builder, includes tB's new data types (LongLong, LongPtr, Decimal)
